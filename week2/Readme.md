@@ -1,10 +1,10 @@
-##In Question 5. I gave this solution I got this error that didn't seem to go away no matter what:
+## In Question 5. I gave this solution I got this error that didn't seem to go away no matter what:
 
-##UESTION:
+## QUESTION:
 
 Write a function to calculate the `mean` and `standard deviation` of IRIS dataset (last column only). `Hint`: You can use NumPy aggregate functions. Create a list and append value to it and return the output. 
 
-##SOLUTION:
+## SOLUTION:
 
 def stats(X):
     """Write a functon to calculate mean and standard deviation of IRIS dataset (last column only)."""
@@ -14,13 +14,13 @@ def stats(X):
     return my_stat
     raise NotImplementedError()
 
-##RESULT:
+## RESULT:
 
 Returned Values [1.199333333333334, 0.7622376689603465]
 
   Actual Values [1.1993333333333336, 0.7622376689603465]
 
-##ERROR:
+## ERROR:
 
 ---------------------------------------------------------------------------
 AssertionError                            Traceback (most recent call last)
@@ -32,7 +32,7 @@ AssertionError                            Traceback (most recent call last)
 AssertionError: 
 
 
-##POSSIBLE REASON FOR ERROR
+## POSSIBLE REASON FOR ERROR
 
 The error you are seeing is likely caused by the fact that the assert statement is comparing two lists of floating-point numbers, which may not be exactly equal due to the way they are represented in memory.
 
@@ -40,7 +40,7 @@ To fix this issue, you can use the assert math.isclose statement to check if the
 
 For example, you can modify the test case as follows:
 
-##OUTCOME
+## OUTCOME
 
 import math
 
