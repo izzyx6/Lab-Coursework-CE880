@@ -44,7 +44,6 @@ The error you are seeing is likely caused by the fact that the assert statement 
 
 To fix this issue, you can use the assert math.isclose statement to check if the values are close to the expected values within a certain tolerance, specified by the rel_tol argument.
 
-For example, you can modify the test case as follows:
 
 ## OUTCOME
 
